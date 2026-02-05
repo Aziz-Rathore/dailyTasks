@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+}
+
+.card {
+  background: #020617;
+  width: 320px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.level-box {
+  text-align: center;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 10px;
+}
+
+.level-box h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.title {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.xp-box {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.tasks h3 {
+  margin-bottom: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #020617;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.task button {
+  background: #22c55e;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task button:disabled {
+  background: #334155;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+#task-mobile-gaming {
+    background: #ef4444;
+}
+
+#task-youtube-drama {
+    background: #ef4444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px;
+  }
+
+  .level-box h1 {
+    font-size: 26px;
+  }
+
+  .xp-box {
+    font-size: 16px;
+  }
+
+  .task {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .task button {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}
