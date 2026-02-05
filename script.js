@@ -20,7 +20,7 @@ const titleEl = document.getElementById("title");
 const today = new Date().toDateString();
 const lastDay = localStorage.getItem("lastDay");
 
-if (lastDay !== today) {
+if (lastDay == today) {
   localStorage.removeItem("completedTasks");
   localStorage.setItem("lastDay", today);
 }
@@ -68,8 +68,9 @@ document.querySelectorAll(".task button").forEach(btn => {
 // INIT
 updateUI();
 
-// function resetXP() {
-//   playerXP = 0;
-//   localStorage.setItem("playerXP", 0);
-//   updateUI();
-// }
+function resetXP() {
+playerXP = 0;
+localStorage.setItem("playerXP", 0);
+updateUI();
+
+ }
