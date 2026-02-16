@@ -68,10 +68,11 @@ document.querySelectorAll(".task button").forEach(btn => {
 // INIT
 updateUI();
 
-// function resetXP() {
-// playerXP = 0;
-// localStorage.setItem("playerXP", 0);
-// updateUI();
+function resetXP() {
+  playerXP = 0;
+  localStorage.setItem("playerXP", 0);
+  updateUI();
 
- // }
+ }
+
 
